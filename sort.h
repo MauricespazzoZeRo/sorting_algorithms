@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <stdbool.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -34,10 +33,11 @@ void sort(int *array, int low, int high, int *temp);
 void merge(int *arrayA, int low, int mid, int high, int *temp);
 int len(int *array);
 void heap_sort(int *array, size_t size);
-void heapify(int *array, size_t size);
-void sift_down(int *array, int low, int high, size_t size);
+void heapify(int *array, size_t size, size_t i, size_t max_size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void swap_nodes(listint_t **a, listint_t **b, listint_t **list);
+void print_counting_array(int *count, int max_value);
+void counting_sort(int *array, size_t size);
 
 #endif /* SORT */
