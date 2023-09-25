@@ -39,5 +39,12 @@ void cocktail_sort_list(listint_t **list);
 void swap_nodes(listint_t **a, listint_t **b, listint_t **list);
 void print_counting_array(int *count, int max_value);
 void counting_sort(int *array, size_t size);
+int get_max(int *array, size_t size);
+void Sig_sort(int *array, size_t size, int exp);
+void radix_sort(int *array, size_t size);
+void bitonic_compare_swap(int *array, size_t low, size_t count, int dir);
+void bitonic_sort_recursive(int *array, size_t size, size_t low, size_t count, int dir);
+void bitonic_sort(int *array, size_t size);
+void bitonic_merge(int *array, size_t low, size_t count, int dir);
 
 #endif /* SORT */
